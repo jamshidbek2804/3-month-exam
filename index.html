@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="./css/main.css">
+
+	<title>PizzaLand</title>
+
+</head>
+
+<body>
+
+	<main class="main">
+
+		<div class="container">
+
+			<h1 class="main__title text-center">Pitsa buyurtma qilish</h1>
+
+			<div class="main__info">
+
+				<div class="main__start">
+
+					<section>
+
+						<h3 class="main__section-title">Noni qanday bo'lsin?</h3>
+
+						<select class="form-select" aria-label="Default select example">
+							<option value="">Nonni tanlang!</option>
+						</select>
+
+
+					</section>
+
+					<section>
+
+						<h3 class="main__section-title">Kattaligini tanlang:</h3>
+
+						<form id="myForm" action="https://echo.htmlacademy.ru" method="post">
+
+							<label class="circle-label" for="circle-1">25cm</label>
+							<input class="circle-input" type="checkbox" name="circle" id="circle-1" value="25cm">
+
+							<label class="circle-label" for="circle-2">30cm</label>
+							<input class="circle-input" type="checkbox" name="circle-2" id="circle-2" value="30cm">
+
+							<label class="circle-label" for="circle-3">35cm</label>
+							<input class="circle-input" type="checkbox" name="circle-3" id="circle-3" value="35cm">
+
+						</form>
+
+					</section>
+
+					<section>
+
+						<h3 class="main__section-title">Ustiga nima solaylik?</h3>
+
+						<form id="myForm" class="form" action="https://echo.htmlacademy.ru" method="post">
+
+							<div>
+								<input type="checkbox" id="input" value="pomidor" name="ustiga">
+								<label for="input">Pomidor</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="input" value="kurka go'shti" name="ustiga">
+								<label for="input">Kurka go'shti</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="input" value="zaytun" name="ustiga">
+								<label for="input">Zaytun</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="input" value="tuzlangan-bodring" name="ustiga">
+								<label for="input">Tuzlangan bodring</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="input" value="qo'ziqorin" name="ustiga">
+								<label for="input">Qo'ziqorin</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="input" value="qazi" name="ustiga">
+								<label for="input">Qazi</label>
+
+							</div>
+
+						</form>
+
+					</section>
+
+					<article>
+						<h3 class="main__section-title">Qo'shimchalar?</h3>
+
+						<form class="last-form" action="https://echo.htmlacademy.ru">
+							<div>
+								<input type="checkbox" id="input" value="achchiq" name="qo'shimchalar">
+								<label for="input">Achchiq</label>
+							</div>
+
+							<div>
+								<input type="checkbox" id="input" value="sosiskali" name="qo'shimchalar">
+								<label for="input">Sosiskali</label>
+							</div>
+
+						</form>
+					</article>
+
+				</div>
+
+				<div class="main__end">
+
+					<p class="main__end-demo">Non: <span id="demo"></span></p>
+
+					<p class="main__end-demo">Kattaligi: <span id="demo-2"></span></p>
+
+					<p class="main__end-demo">Ustida: <li id="demo-3"></li>
+					</p>
+
+					<p class="main__end-demo">Qo'shimcha: <li id="demo-4"></li>
+					</p>
+
+					<form id="myForm" action="https://echo.htmlacademy.ru" method="post">
+						<input type="button" onclick="myFunction()" value="Submit form">
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</main>
+
+
+	<script src="./main.js"></script>
+</body>
+
+</html>

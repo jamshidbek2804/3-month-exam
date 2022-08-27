@@ -1,0 +1,91 @@
+.main {
+  width: 100%;
+
+  &__info {
+    display: flex;
+    gap: 400px;
+    // justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;
+    padding: 30px 60px;
+    margin-top: 20px;
+  }
+
+  &__end {
+    border-left: 2px solid black;
+    padding-left: 40px;
+  }
+
+  &__title {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 55px;
+  }
+
+  &__section-title,
+  &__end-demo,
+  label,
+  button {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  select {
+    max-width: 205px;
+  }
+
+  option,
+  span,
+  li {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  form {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+section {
+  padding-bottom: 50px;
+}
+
+.circle-label {
+  padding: 20px 15px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.circle-label:hover {
+  cursor: pointer;
+}
+
+.circle-input {
+  display: none;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 350px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 18px 70px;
+  border: none;
+  color: #fff;
+  background-color: orangered;
+  border-radius: 5px;
+}
